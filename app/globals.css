@@ -15,19 +15,19 @@
 
 @layer base {
   * {
-    @apply border-border;
+    @apply border-border no-scrollbar;
   }
   body {
     @apply bg-[#F2F1EF] text-foreground;
   }
 }
 @layer utilities {
-  .home {
-    @apply no-scrollbar flex flex-row w-full max-xl:max-h-screen max-xl:overflow-y-scroll;
-  }
-
   /* Root Layout */
   .root-layout {
     @apply flex h-16 items-center justify-between p-5 sm:p-8 lg:hidden;
+  }
+
+  .sidebar-link {
+    @apply flex gap-3 items-center py-1 md:p-3 2xl:p-4 rounded-lg justify-center xl:justify-start;
   }
 }

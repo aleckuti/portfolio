@@ -13,7 +13,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const MobileNav = () => {
-    const pathname = usePathname();
+  const pathname = usePathname();
   return (
     <section className="w-full max-w-[264px]">
       <Sheet>
@@ -26,7 +26,10 @@ const MobileNav = () => {
             className="cursor-pointer"
           />
         </SheetTrigger>
-        <SheetContent side="left" className="border-none bg-[#F2F1EF] px-4 flex flex-col gap-10">
+        <SheetContent
+          side="left"
+          className="border-none bg-[#F2F1EF] px-4 flex flex-col gap-10"
+        >
           <Link href="/">
             <Image src="/logo.png" width={150} height={150} alt="Brian Suyi" />
           </Link>
@@ -41,18 +44,20 @@ const MobileNav = () => {
                 <Link
                   href={item.route}
                   id={item.label}
-                  className={cn("flex flex-col mb-2 text-basecolor font-medium", {
-                    "text-active font-semibold underline": isActive,
+                  className={cn("sidebar-link", {
+                    "bg-active": isActive,
                   })}
                 >
-                  {item.label}
+                  <p className={cn({ "!text-white": isActive })}>
+                    {item.label}
+                  </p>
                 </Link>
               );
             })}
           </div>
 
           {/* navbar social links  */}
-          <div className="flex">
+          <div className="flex gap-5 justify-center">
             {socialLinks.map((item) => {
               return (
                 <Link href={item.route} target="_blank">
@@ -61,7 +66,7 @@ const MobileNav = () => {
                     width={30}
                     height={30}
                     alt="social links"
-                    className="mr-2"
+                    className=""
                   />
                 </Link>
               );
@@ -72,9 +77,9 @@ const MobileNav = () => {
           <Link
             href="https://drive.google.com/file/d/1Xph308Dqg3UKDc5QyqS-u0GV5h-XWIwT/view?usp=sharing"
             target="_blank"
-            className="font-semibold text-basecolor border-2 py-2 px-3 rounded-xl border-basecolor text-center"
+            className="font-semibold text-basecolor border-2 py-2 px-3 border-basecolor text-center"
           >
-            My Resume
+            View Resume
           </Link>
         </SheetContent>
       </Sheet>

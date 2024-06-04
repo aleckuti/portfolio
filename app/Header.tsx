@@ -13,7 +13,7 @@ const Header = () => {
 
   return (
     <div>
-      <nav className="hidden lg:flex items-center justify-between py-5 px-10">
+      <nav className="hidden lg:flex items-center justify-between py-5 px-10 h-[90px]">
         {/* logo  */}
         <Link href="/">
           <Image src="/logo.png" width={200} height={200} alt="Brian Suyi" />
@@ -59,9 +59,9 @@ const Header = () => {
         <Link
           href="https://drive.google.com/file/d/1Xph308Dqg3UKDc5QyqS-u0GV5h-XWIwT/view?usp=sharing"
           target="_blank"
-          className="font-semibold text-basecolor border-2 py-2 px-3 rounded-xl border-basecolor"
+          className="font-semibold text-basecolor border-2 py-2 px-3 border-basecolor"
         >
-          My Resume
+          View Resume
         </Link>
       </nav>
 

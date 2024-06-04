@@ -1,9 +1,12 @@
-import React from 'react'
+import Banner from "@/components/Banner";
+import React from "react";
 
 const Home = () => {
   return (
-    <section className='home'>Home</section>
-  )
-}
+    <section>
+      <Banner />
+    </section>
+  );
+};
 
-export default Home
+export default Home;

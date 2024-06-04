@@ -77,7 +77,7 @@ const Banner = () => {
             alt="Brian"
             className="hidden lg:w-[450px] md:w-[300px] md:flex"
           />
-          <img src="/img.png" alt="Brian" className="bg-cover md:hidden mt-5" />
+          <Image src="/img.png" width={500} height={500} alt="Brian" className="bg-cover md:hidden mt-5" />
         </div>
       </div>
     </section>

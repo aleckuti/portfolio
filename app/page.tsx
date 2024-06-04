@@ -1,11 +1,15 @@
 import Banner from "@/components/Banner";
+import FeatureBanner from "@/components/FeatureBanner";
 import React from "react";
 
 const Home = () => {
   return (
-    <section>
-      <Banner />
-    </section>
+    <div>
+      <section>
+        <Banner />
+        <FeatureBanner />
+      </section>
+    </div>
   );
 };
 

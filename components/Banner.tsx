@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Banner = () => {
   return (
-    <section className="py-10">
+    <section className="pt-10 md:pt-10 md:pb-20">
       <div className="md:flex items-center justify-between md:mx-10 lg:mx-20">
         <div className="flex flex-col gap-5 items-center md:items-start">
           <div className="flex flex-col items-center font-semibold md:font-bold text-[20px] md:items-start md:text-[30px] lg:text-[50px]">
@@ -62,13 +62,10 @@ const Banner = () => {
 
           {/* Mobile Call to Action  */}
           <div className="flex flex-col md:hidden items-center gap-2 font-medium text-base font-sans">
-            <span className="">Got a Project?&nbsp;</span>
-            <Link
-              href="#"
-              className="bg-black px-16 py-2 text-white hover:bg-basecolor hover:transition"
-            >
-              Ask me Anything
-            </Link>
+            <span className="">Got a Project?</span>
+            <div className="bg-black px-16 py-2 text-white hover:bg-basecolor hover:transition">
+              <Link href="#">Ask me Anything</Link>
+            </div>
           </div>
         </div>
 
@@ -80,13 +77,7 @@ const Banner = () => {
             alt="Brian"
             className="hidden lg:w-[450px] md:w-[300px] md:flex"
           />
-          <Image
-            src="/img.png"
-            width={400}
-            height={400}
-            alt="Brian"
-            className="w-[300px] md:hidden mt-5"
-          />
+          <img src="/img.png" alt="Brian" className="bg-cover md:hidden mt-5" />
         </div>
       </div>
     </section>

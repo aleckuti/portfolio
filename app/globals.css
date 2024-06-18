@@ -2,32 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Hide scrollbar for Chrome, Safari and Opera */
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
+.custom-color {
+  background-image: linear-gradient(
+    to right top,
+    #051937,
+    #051840,
+    #0c1648,
+    #19114f,
+    #280853
+  );
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
-.no-scrollbar {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+.link-bg {
+  background-image: linear-gradient(
+    to right top,
+    #06285e,
+    #132b75,
+    #2c2b89,
+    #48269b,
+    #6816aa
+  );
 }
 
-@layer base {
-  * {
-    @apply border-border no-scrollbar;
-  }
-  body {
-    @apply bg-[#F2F1EF] text-foreground;
-  }
+.icon-bg:hover{
+  background: #0401a5;
+  transition: all ease 0.5s;
 }
+
 @layer utilities {
-  /* Root Layout */
-  .root-layout {
-    @apply flex h-16 items-center justify-between p-5 sm:p-8 lg:hidden;
+  /* Sidebar  */
+  .sidebar {
+    @apply sticky left-0 top-0 flex flex-col h-screen w-fit justify-between text-white custom-color max-md:hidden sm:p-4 xl:p-6 2xl:w-[355px];
   }
 
-  .sidebar-link {
-    @apply flex gap-3 items-center py-1 md:p-3 2xl:p-4 rounded-lg justify-center xl:justify-start;
+  .icon-bg {
+    @apply link-bg rounded-full px-2 fill-white;
   }
 }

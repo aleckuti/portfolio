@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const Sidebar = ({user}: SidebarProps) => {
+const Sidebar = ({ user }: SidebarProps) => {
   return (
     <section className="sidebar">
       <nav>

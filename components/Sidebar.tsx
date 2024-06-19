@@ -1,11 +1,18 @@
+'use client'
+
+import { sidebarLinks } from "@/constants";
+import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React from "react";
 
 const Sidebar = ({ user }: SidebarProps) => {
+  const pathname = usePathname();
+
   return (
     <section className="sidebar">
-      <nav>
+      <nav className="flex flex-col gap-5">
         <div className="flex flex-col items-center gap-3">
           <Image
             src="/img.jpg"
@@ -79,6 +86,39 @@ const Sidebar = ({ user }: SidebarProps) => {
               </svg>
             </Link>
           </div>
+
+          <Link
+            href="https://drive.google.com/file/d/1Xph308Dqg3UKDc5QyqS-u0GV5h-XWIwT/view?usp=sharing"
+            target="_blank"
+            className="underline hover:text-[#149ddd] hover:transition"
+          >
+            Download Resume
+          </Link>
+        </div>
+
+        <div>
+          {sidebarLinks.map((item) => {
+            const isActive = pathname === item.route || pathname.startsWith(`${item.route}/`);
+
+            return (
+              <Link
+                href={item.route}
+                key={item.label}
+                className={cn("sidebar-link", {'bg-[#149ddd]' : isActive})}
+              >
+                <div>
+                  <Image
+                    src={item.imgURL}
+                    alt={item.label}
+                    width={25}
+                    height={25}
+                    className='text-red-500'
+                  />
+                </div>
+                <p>{item.label}</p>
+              </Link>
+            );
+          })}
         </div>
       </nav>
     </section>

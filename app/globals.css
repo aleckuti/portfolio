@@ -24,15 +24,19 @@
   );
 }
 
-.icon-bg:hover{
-  background: #0401a5;
+.icon-bg:hover {
+  background: #149ddd;
   transition: all ease 0.5s;
 }
 
 @layer utilities {
   /* Sidebar  */
   .sidebar {
-    @apply sticky left-0 top-0 flex flex-col h-screen w-fit justify-between text-white custom-color max-md:hidden sm:p-4 xl:p-6 2xl:w-[355px];
+    @apply sticky left-0 top-0 flex flex-col h-screen w-fit justify-between text-white custom-color overflow-y-hidden max-md:hidden sm:p-4 xl:p-6 2xl:w-[355px];
+  }
+
+  .sidebar-link {
+    @apply flex gap-5 items-center py-1 md:pl-5 md:p-3 2xl:p-4 rounded-lg justify-center xl:justify-start;
   }
 
   .icon-bg {

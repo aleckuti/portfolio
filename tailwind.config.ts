@@ -19,6 +19,9 @@ const config = {
     },
     extend: {
       colors: {},
+      boxShadow: {
+        mobilenav: "8px 10px 16px 0px rgba(0, 0, 0, 0.05)",
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },

@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import { sidebarLinks } from "@/constants";
 import { cn } from "@/lib/utils";
@@ -12,18 +12,18 @@ const Sidebar = ({ user }: SidebarProps) => {
 
   return (
     <section className="sidebar">
-      <nav className="flex flex-col gap-5">
+      <nav className="flex flex-col gap-10">
         <div className="flex flex-col items-center gap-3">
           <Image
             src="/img.jpg"
-            width={200}
-            height={200}
+            width={150}
+            height={150}
             alt="Brian"
             className="rounded-full aspect-square object-cover border-4 border-gray-400"
           />
 
           <Link href="/">
-            <h2 className="text-2xl font-bold">Brian Olasuyi</h2>
+            <h2 className="text-2xl font-semibold">Brian Olasuyi</h2>
           </Link>
 
           <div className="flex gap-2">
@@ -32,8 +32,8 @@ const Sidebar = ({ user }: SidebarProps) => {
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
                 y="0px"
-                width="40"
-                height="40"
+                width="35"
+                height="35"
                 viewBox="0 0 50 50"
                 className="icon-bg"
               >
@@ -45,8 +45,8 @@ const Sidebar = ({ user }: SidebarProps) => {
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
                 y="0px"
-                width="40"
-                height="40"
+                width="35"
+                height="35"
                 viewBox="0 0 32 32"
                 className="icon-bg"
               >
@@ -61,8 +61,8 @@ const Sidebar = ({ user }: SidebarProps) => {
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
                 y="0px"
-                width="40"
-                height="40"
+                width="35"
+                height="35"
                 viewBox="0 0 50 50"
                 className="icon-bg"
               >
@@ -74,8 +74,8 @@ const Sidebar = ({ user }: SidebarProps) => {
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
                 y="0px"
-                width="40"
-                height="40"
+                width="35"
+                height="35"
                 viewBox="0 0 48 48"
                 className="icon-bg"
               >
@@ -98,13 +98,14 @@ const Sidebar = ({ user }: SidebarProps) => {
 
         <div>
           {sidebarLinks.map((item) => {
-            const isActive = pathname === item.route || pathname.startsWith(`${item.route}/`);
+            const isActive =
+              pathname === item.route || pathname.startsWith(`${item.route}/`);
 
             return (
               <Link
                 href={item.route}
                 key={item.label}
-                className={cn("sidebar-link", {'bg-[#149ddd]' : isActive})}
+                className={cn("sidebar-link", { "bg-[#149ddd]": isActive })}
               >
                 <div>
                   <Image
@@ -112,7 +113,7 @@ const Sidebar = ({ user }: SidebarProps) => {
                     alt={item.label}
                     width={25}
                     height={25}
-                    className='text-red-500'
+                    className="text-red-500"
                   />
                 </div>
                 <p>{item.label}</p>
@@ -121,6 +122,12 @@ const Sidebar = ({ user }: SidebarProps) => {
           })}
         </div>
       </nav>
+
+      <div className="text-center text-sm">
+        <p>
+          Copyright &copy; 2024 - <a href="/">Bsuyi</a>
+        </p>
+      </div>
     </section>
   );
 };

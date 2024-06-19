@@ -13,7 +13,7 @@ export default function RootLayout({
 
       <div className="flex flex-col size-full">
         <div className="root-layout">
-          <h1>Brian Suyi</h1>
+          <h1 className="text-xl font-semibold text-slate-700 ">Brian Suyi</h1>
           <div>
             <MobileNav user={loggedIn} />
           </div>

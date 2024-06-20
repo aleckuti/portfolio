@@ -23,7 +23,7 @@ const Sidebar = ({ user }: SidebarProps) => {
           />
 
           <Link href="/">
-            <h2 className="text-2xl font-semibold">Brian Olasuyi</h2>
+            <h2 className="text-2xl font-semibold uppercase">Brian suyi</h2>
           </Link>
 
           <div className="flex gap-2">

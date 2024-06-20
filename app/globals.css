@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  scroll-behavior: smooth;
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+*::-webkit-scrollbar {
+  display: none;
+}
+
 .custom-color {
   background-image: linear-gradient(
     to right top,
@@ -29,15 +41,24 @@
   transition: all ease 0.5s;
 }
 
+.hero-bg {
+  background-image: linear-gradient(to bottom, #58cfff, #7edde2, #b5e4cf, #dfe8d5, #f2f1ef);
+}
+
 @layer utilities {
   /* root layout  */
   .root-layout {
     @apply flex h-16 items-center justify-between shadow-mobilenav p-5 md:hidden;
   }
 
+  /* Home  */
+  .home {
+    @apply md:w-[80vw];
+  }
+
   /* Sidebar  */
   .sidebar {
-    @apply sticky left-0 top-0 flex flex-col h-screen md:w-[32%] lg:w-[25%] justify-between text-white custom-color overflow-y-hidden max-md:hidden sm:pt-10 sm:p-4 xl:p-6 2xl:w-[355px];
+    @apply sticky top-0 left-0 flex flex-col h-screen md:w-[32vw] lg:w-[20vw] justify-between text-white custom-color overflow-hidden max-md:hidden sm:pt-10 sm:p-4 xl:p-6 2xl:w-[355px];
   }
 
   .sidebar-link {
@@ -55,5 +76,9 @@
 
   .icon-bg {
     @apply link-bg rounded-full px-2 fill-white;
+  }
+
+  .banner-item {
+    @apply uppercase flex flex-col items-center justify-center text-white bg-gray-800 bg-opacity-70 w-full h-full py-20 md:py-0 text-[20px] md:text-[60px] font-bold text-center
   }
 }

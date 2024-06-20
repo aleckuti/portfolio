@@ -5,3 +5,9 @@ declare interface SidebarProps {
 declare interface MobileNavProps {
     user: User;
 }
+
+declare interface BannerProps {
+    type?: "greeting";
+    title: string;
+    subtext: string;
+}

@@ -6,7 +6,7 @@ export const sidebarLinks = [
   },
   {
     imgURL: "/icons/about.svg",
-    route: "/about",
+    route: "#about",
     label: "About",
   },
   {

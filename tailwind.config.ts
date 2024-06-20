@@ -18,7 +18,12 @@ const config = {
       },
     },
     extend: {
-      colors: {},
+      colors: {
+        "banner": "#F2F1EF"
+      },
+      backgroundImage: {
+        hero: "url('/bg.jpg')",
+      },
       boxShadow: {
         mobilenav: "8px 10px 16px 0px rgba(0, 0, 0, 0.05)",
       },

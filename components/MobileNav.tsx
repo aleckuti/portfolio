@@ -3,9 +3,6 @@
 import {
   Sheet,
   SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { sidebarLinks } from "@/constants";
@@ -40,7 +37,7 @@ const MobileNav = ({ user }: MobileNavProps) => {
               />
 
               <Link href="/">
-                <h2 className="text-2xl font-bold">Brian Olasuyi</h2>
+                <h2 className="text-2xl font-bold uppercase">Brian suyi</h2>
               </Link>
 
               <div className="flex gap-2">

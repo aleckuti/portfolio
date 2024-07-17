@@ -6,7 +6,7 @@ const Banner = ({ type = "greeting", title, subtext }: BannerProps) => {
     <section className="md:h-screen bg-hero bg-cover">
       <div className="banner-item">
         <h1>
-          <span>brian suyi</span> <br /> software engineer
+          <span>victor alec o.</span> <br /> software engineer
         </h1>
         <div className="text-lg font-medium lowercase">
         <Link href="#">Hire Me</Link>

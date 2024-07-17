@@ -71,7 +71,7 @@
   }
 
   .mobilenav-link {
-    @apply flex gap-5 items-start py-2 rounded-lg pl-10;
+    @apply flex gap-5 items-start py-2 rounded-lg pl-10 text-sm items-center;
   }
 
   .icon-bg {

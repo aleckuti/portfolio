@@ -90,7 +90,7 @@ const Sidebar = ({ user }: SidebarProps) => {
           <Link
             href="https://drive.google.com/file/d/1Xph308Dqg3UKDc5QyqS-u0GV5h-XWIwT/view?usp=sharing"
             target="_blank"
-            className="underline hover:text-[#149ddd] hover:transition"
+            className="underline hover:text-[#149ddd] hover:transition text-sm"
           >
             Download Resume
           </Link>
@@ -123,7 +123,7 @@ const Sidebar = ({ user }: SidebarProps) => {
         </div>
       </nav>
 
-      <div className="text-center text-sm">
+      <div className="text-center text-[12px]">
         <p>
           Copyright &copy; 2024 - <a href="/">VAlec</a>
         </p>

@@ -37,7 +37,7 @@ const MobileNav = ({ user }: MobileNavProps) => {
               />
 
               <Link href="/">
-                <h2 className="text-2xl font-bold uppercase">victor alec</h2>
+                <h2 className="text-[22px] font-bold uppercase">victor alec</h2>
               </Link>
 
               <div className="flex gap-2">
@@ -104,7 +104,7 @@ const MobileNav = ({ user }: MobileNavProps) => {
               <Link
                 href="https://drive.google.com/file/d/1Xph308Dqg3UKDc5QyqS-u0GV5h-XWIwT/view?usp=sharing"
                 target="_blank"
-                className="underline hover:text-[#149ddd] hover:transition"
+                className="underline hover:text-[#149ddd] hover:transition text-sm"
               >
                 Download Resume
               </Link>
@@ -139,7 +139,7 @@ const MobileNav = ({ user }: MobileNavProps) => {
             </div>
           </div>
 
-          <div className="text-center text-sm">
+          <div className="text-center text-[12px]">
             <p>Copyright &copy; 2024 - <a href="/">VAlec</a></p>
           </div>
         </SheetContent>

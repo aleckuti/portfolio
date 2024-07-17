@@ -102,7 +102,7 @@ const MobileNav = ({ user }: MobileNavProps) => {
               </div>
 
               <Link
-                href="https://drive.google.com/file/d/1Xph308Dqg3UKDc5QyqS-u0GV5h-XWIwT/view?usp=sharing"
+                href="https://drive.google.com/file/d/1wdEzrHGODcOSgKdOKeEDLQ7vIGw6T8-I/view?usp=sharing"
                 target="_blank"
                 className="underline hover:text-[#149ddd] hover:transition text-sm"
               >

@@ -135,7 +135,7 @@ const MobileNav = ({ user }: MobileNavProps) => {
 
           <div className="text-center text-[12px]">
             <p>
-              Copyright &copy; 2024 - <a href="/">VAlec</a>
+              Copyright &copy; 2024 - <a href="/">Voalec</a>
             </p>
           </div>
         </SheetContent>

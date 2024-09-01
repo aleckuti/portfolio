@@ -18,7 +18,7 @@ export default function RootLayout({
       {/* Mobile layout  */}
       <div className="md:hidden">
         <div className="root-layout">
-          <h1 className="text-xl font-semibold text-slate-700 uppercase">Victor Alec</h1>
+          <h1 className="text-xl font-semibold text-slate-700 uppercase">Alec Kuti</h1>
           <div>
             <MobileNav user={loggedIn} />
           </div>
